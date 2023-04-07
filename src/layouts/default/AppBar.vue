@@ -1,31 +1,44 @@
 <template>
-  
-  <v-card
-    color="grey-lighten-4"
-    flat
-    height="200px"
-    rounded="0"
-  >
-    <v-toolbar density="compact">
-      
+  <v-card flat>
+    <v-toolbar
+      color="primary"
+      dark
+      extended
+      flat
+    >
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
-
-      <v-toolbar-title>BookTrack</v-toolbar-title>
-
-      <v-btn icon>
-        <v-icon>mdi-magnify</v-icon>
-      </v-btn>
-
-      <v-row class="ma-2" justify="right">
-      <v-checkbox label="Availability"></v-checkbox>
-      </v-row>
-
-      <v-btn>
-        Search
-      </v-btn>
     </v-toolbar>
-  </v-card>
 
+    <v-card
+      class="mx-auto"
+      max-width="700"
+      style="margin-top: -64px;"
+    >
+      <v-toolbar flat>
+        <v-toolbar-title class="text-grey">
+          Title
+        </v-toolbar-title>
+
+        <v-spacer></v-spacer>
+
+        <v-btn icon>
+          <v-icon>mdi-magnify</v-icon>
+        </v-btn>
+
+        <v-btn icon>
+          <v-icon>mdi-apps</v-icon>
+        </v-btn>
+
+        <v-btn icon>
+          <v-icon>mdi-dots-vertical</v-icon>
+        </v-btn>
+      </v-toolbar>
+
+      <v-divider></v-divider>
+
+      <v-card-text style="height: 200px;"></v-card-text>
+    </v-card>
+  </v-card>
 </template>
 
 <script setup>
